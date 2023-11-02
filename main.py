@@ -1,10 +1,6 @@
 import argparse
 import os
-import numpy as np
 from typing import (
-    List, 
-    Tuple, 
-    IO,
     Literal,
 )
 
@@ -12,7 +8,7 @@ def print_file_contents(
     kind: Literal["lines", "bytes"],
     N: int | None,
     filename: str
-):
+) -> None:
     if os.path.isfile(filename):
         if kind == 'lines':
             try:
