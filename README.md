@@ -164,8 +164,33 @@ hello, wo
 hello, wo
 ```
 
+```cmd
+C:\> head test.txt small.txt hello.txt -n 7
+==> test.txt <==
+The Project Gutenberg eBook of The Art of War
+
+This ebook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this ebook or online
+at www.gutenberg.org. If you are not located in the United States,
+
+==> small.txt <==
+The Project Gutenberg eBook of The Art of War
+
+This ebook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this ebook or online
+at www.gutenberg.org. If you are not located in the United States,
+
+==> hello.txt <==
+hello, world!
+```
 
 ## Acknowledgements
 Thanks to [John Crickett](https://github.com/JohnCrickett) for the idea from his site, [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc)!
+
+Text samples were downloaded from [this](https://www.gutenberg.org/cache/epub/132/pg132.txt) site.
 
 Feedback, bug reports, issues, and pull requests welcome!
