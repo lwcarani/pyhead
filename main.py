@@ -1,8 +1,6 @@
 import argparse
 import os
-from typing import (
-    Literal,
-)
+from typing import Literal
 
 def print_file_contents(
     kind: Literal["lines", "bytes"],
