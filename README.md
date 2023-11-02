@@ -94,6 +94,77 @@ The Project Gutenberg eBook of The Art of War
 This ebook is for the use of anyone anywhere in the United States and
 ```
 
+And we can also specify and display on the first `c` bytes:
+
+```cmd
+C:\> head test.txt -c243
+The Project Gutenberg eBook of The Art of War
+
+This ebook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or
+``` 
+
+```cmd
+C:\> head test.txt -c 42 
+The Project Gutenberg eBook of The Art of
+```
+
+We can also pass in multiple files
+
+```cmd
+C:\> head hello.txt small.txt hello.txt 
+==> hello.txt <==
+hello, world!
+
+==> small.txt <==
+The Project Gutenberg eBook of The Art of War
+
+This ebook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this ebook or online
+at www.gutenberg.org. If you are not located in the United States,
+you will have to check the laws of the country where you are located
+before using this eBook.
+
+==> hello.txt <==
+hello, world!
+```
+
+```cmd
+C:\> head hello.txt hello.txt hello.txt hello.txt
+==> hello.txt <==
+hello, world!
+
+==> hello.txt <==
+hello, world!
+
+==> hello.txt <==
+hello, world!
+
+==> hello.txt <==
+hello, world!
+```
+
+And finally, we can pass in multiple files, along with the `n` or `c` flag:
+
+```cmd
+C:\> head hello.txt hello.txt hello.txt hello.txt -c9
+==> hello.txt <==
+hello, wo
+
+==> hello.txt <==
+hello, wo
+
+==> hello.txt <==
+hello, wo
+
+==> hello.txt <==
+hello, wo
+```
+
+
 ## Acknowledgements
 Thanks to [John Crickett](https://github.com/JohnCrickett) for the idea from his site, [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc)!
 
