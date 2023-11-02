@@ -1,7 +1,7 @@
-# pyhead
+# py-head
 
 ## About
-`pyhead` is my version of the Linux-style command line tool named `head`. It is a command line tool that displays the first `n` lines or `c` bytes of a file, where the user can provide the value for `n` and `c`. If no file or value for `n` or `c` is provided, then it displays the first 10 lines from the standard input.
+`py-head` is my version of the Linux-style command line tool named `head`. It is a command line tool that displays the first `n` lines or `c` bytes of a file, where the user can provide the value for `n` and `c`. If no file or value for `n` or `c` is provided, then it displays the first 10 lines from the standard input.
 
 This version is written in Python. 
 
@@ -11,14 +11,14 @@ For Windows, create a folder named `Aliases` in your C drive: `C:/Aliases`. Add 
 ```bat
 @echo off
 echo.
-python C:\...\GitHub\pyhead\main.py %*
+python C:\...\GitHub\py-head\main.py %*
 ```
 
-So now, when I type `head` in the command prompt, this batch file will execute, which in turn, runs the `pyhead` Python script. 
+So now, when I type `head` in the command prompt, this batch file will execute, which in turn, runs the `py-head` Python script. 
 
 ## Examples
 
-`pyhead` allows you to execute typical Linux-style `head` commands. If no flags are included with the filename, it prints the entire file contents:
+`py-head` allows you to execute typical Linux-style `head` commands. If no flags are included with the filename, it prints the entire file contents:
 
 ```cmd
 C:\> head hello.txt
