@@ -94,7 +94,7 @@ The Project Gutenberg eBook of The Art of War
 This ebook is for the use of anyone anywhere in the United States and
 ```
 
-And we can also specify and display on the first `c` bytes:
+And we can also specify and display only the first `c` bytes:
 
 ```cmd
 C:\> head test.txt -c243
