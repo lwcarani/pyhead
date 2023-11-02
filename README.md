@@ -189,7 +189,7 @@ hello, world!
 ```
 
 ## Acknowledgements
-Thanks to [John Crickett](https://github.com/JohnCrickett) for the idea from his site, [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc)!
+Thanks to [John Crickett](https://github.com/JohnCrickett) for the idea from his site, [Coding Challenges](https://codingchallenges.substack.com/p/coding-challenge-33-head)!
 
 Text samples were downloaded from [this](https://www.gutenberg.org/cache/epub/132/pg132.txt) site.
 
