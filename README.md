@@ -11,20 +11,31 @@ For Windows, create a folder named `Aliases` in your C drive: `C:/Aliases`. Add 
 ```bat
 @echo off
 echo.
-python C:\...\GitHub\pywc\main.py %*
+python C:\...\GitHub\pyhead\main.py %*
 ```
 
-So now, when I type `wc` in the command prompt, this batch file will execute, which in turn, runs the `pywc` Python script. 
+So now, when I type `head` in the command prompt, this batch file will execute, which in turn, runs the `pyhead` Python script. 
 
 ## Examples
 
-`pywc` allows you to execute typical Linux-style `wc` commands. Line count for a single file:
+`pyhead` allows you to execute typical Linux-style `head` commands. If no flags are included with the filename, it prints the entire file contents:
+
+```cmd
+C:\> head hello.txt
+hello, world!
+```
 
 ```console
-C:\> wc test.txt -l
-  7145  test.txt
-  7145  total
-  lines
+C:\> head small.txt
+The Project Gutenberg eBook of The Art of War
+
+This ebook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this ebook or online
+at www.gutenberg.org. If you are not located in the United States,
+you will have to check the laws of the country where you are located
+before using this eBook.
 ```
 
 Byte count:
