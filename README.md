@@ -97,7 +97,7 @@ This ebook is for the use of anyone anywhere in the United States and
 And we can also specify and display only the first `c` bytes:
 
 ```cmd
-C:\> head test.txt -c243
+C:\> head large.txt -c243
 The Project Gutenberg eBook of The Art of War
 
 This ebook is for the use of anyone anywhere in the United States and
@@ -106,7 +106,7 @@ whatsoever. You may copy it, give it away or
 ``` 
 
 ```cmd
-C:\> head test.txt -c 42 
+C:\> head large.txt -c 42 
 The Project Gutenberg eBook of The Art of
 ```
 
@@ -165,8 +165,8 @@ hello, wo
 ```
 
 ```cmd
-C:\> head test.txt small.txt hello.txt -n 7
-==> test.txt <==
+C:\> head large.txt small.txt hello.txt -n 7
+==> large.txt <==
 The Project Gutenberg eBook of The Art of War
 
 This ebook is for the use of anyone anywhere in the United States and
