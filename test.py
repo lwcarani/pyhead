@@ -8,19 +8,15 @@ from typing import Literal
 from main import print_file_contents
 
 # initialize data for unittesting
-SMALL = ''
 with open('test_files/small.txt', 'r', encoding='utf-8') as f:
     SMALL = f.read()
 
-HELLO = ''
 with open('test_files/hello.txt', 'r', encoding='utf-8') as f:
     HELLO = f.read()
 
-WALRUS = ''
 with open('test_files/walrus.txt', 'r', encoding='utf-8') as f:
     WALRUS = f.read()
 
-LARGE = ''
 with open('test_files/large.txt', 'r', encoding='utf-8') as f:
     LARGE = f.read()
 
