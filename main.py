@@ -24,54 +24,55 @@ def print_file_contents(
             # skip files we don't have permission to read
             except PermissionError as e:
                 print(f'Could not open file. Error: "{e}"')
-
         elif kind == 'bytes':
             try:
                 # read file in binary mode
                 with open(filename, 'rb') as f:
+                    # read the first `N` bytes
                     to_print: bytes = f.read(N)
+                    # decode bytes to plain text then print to console
                     to_print_str: str = to_print.decode('utf-8')
                     print(to_print_str, end='')
             # skip files we don't have permission to read
             except PermissionError as e:
                 print(f'Could not open file. Error: "{e}"')
+        else:
+            print(f"{kind} is not a valid read mode!")
     else:
         print(f'"{filename}" is not a valid file!')
     
-
 
 if __name__ == '__main__':
     # Create an ArgumentParser object
     parser = argparse.ArgumentParser(description='Process text file(s).')
 
-    # Add arguments for input file(s) and/or dir(s)
+    # Add arguments for input file(s)
     parser.add_argument(
         'input_files', 
-        nargs='*', 
+        nargs='*',  # 0 or more input files
         type=str,
-        default=None,
+        default=[],
         help='Path to the input file(s). Pass no options with input file to print out the contents of the entire file. Pass no file to read from user input.'
     )
 
-    # Create a mutually exclusive group for -c and -n
+    # Create a mutually exclusive group for -c and -n flags
     group = parser.add_mutually_exclusive_group()
 
-    # Add flags for different options, store as True/False
-    group.add_argument('-c', '--bytes', type=int, help='Print bytes')
-    group.add_argument('-n', '--lines', type=int, help='Print lines')
+    # Add flags for different options to the mutually exclusive group created above
+    group.add_argument('-c', '--bytes', type=int, default=None, help='Print bytes')
+    group.add_argument('-n', '--lines', type=int, default=None, help='Print lines')
 
     # Parse the command-line arguments
     args = parser.parse_args()
 
-    # no params passed
+    # no params passed, take standard input from user, print it back out
     if (
         args.bytes is None
         and args.lines is None
         and len(args.input_files) == 0
     ):
         for i in range(10):
-            user_input = input()
-            print(user_input)
+            print(input())
 
     # only one input file, no other flags
     elif (
