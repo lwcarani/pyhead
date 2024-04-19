@@ -1,7 +1,7 @@
 # py-head
 
 ## About
-`py-head` is my version of the Linux-style command line tool named `head`. It is a command line tool that displays the first `n` lines or `c` bytes of a file, where the user can provide the value for `n` and `c`. If no file or value for `n` or `c` is provided, then it displays the first 10 lines from the standard input.
+`py-head` is my version of the Unix-style command line tool named `head`. It is a command line tool that displays the first `n` lines or `c` bytes of a file, where the user can provide the value for `n` and `c`. If no file or value for `n` or `c` is provided, then it displays the first 10 lines from the standard input.
 
 This version is written in Python. 
 
@@ -18,7 +18,7 @@ So now, when I type `head` in the command prompt, this batch file will execute, 
 
 ## Examples
 
-`py-head` allows you to execute typical Linux-style `head` commands. If no flags are included with the filename, it prints the entire file contents:
+`py-head` allows you to execute typical Unix-style `head` commands. If no flags are included with the filename, it prints the entire file contents:
 
 ```cmd
 C:\> head hello.txt
